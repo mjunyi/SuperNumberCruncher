@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SuperNumberCruncher</string>
+    <string name="singleS">s</string>
+    <string name="zero">0</string>
+    <string name="onehundredseconds">100s</string>
+    <string name="plus5s">+5s</string>
+    <string name="zeroseconds">0s</string>
+    <string name="minus10seconds">-10s</string>
+    <string name="ninetynine">99</string>
+    <string name="activity_does_not_implement_ScoreHandler_interface">Activity does not implement ScoreHandler interface</string>
+    <string name="gameboard_not_initialized">Gameboard is not initialized, got a 0th tile</string>
+    <string name="game_over_your_score_is">Gameover! Your score is</string>
+</resources>

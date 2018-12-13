@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="singlefocus">#21ea0e</color>
+    <color name="doublefocus">#e61b1b</color>
+    <color name="black">#FF000000</color>
+    <color name="block1">#8b1e23</color>
+    <color name="block2">#0800f3</color>
+    <color name="block3">#008577</color>
+    <color name="block4">#f57f17</color>
+    <color name="block5">#24f7db</color>
+    <color name="block6">#7210ce</color>
+    <color name="block7">#d65da0</color>
+    <color name="block8">#f2d82b</color>
+    <color name="block9">#176e17</color>
+    <color name="block10Plus">#040404</color>
+    <color name="block21">#ffffff</color>
+    <color name="blockOver21">#646062</color>
+</resources>

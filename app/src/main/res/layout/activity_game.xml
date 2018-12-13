@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameblank">
+
+    <com.example.jmin.supernumbercruncher.ui.SuperNumberCruncherView
+        android:id="@+id/superNumberCruncherView"
+        android:layout_width="275dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginBottom="41dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginRight="226dp"
+        android:layout_marginBottom="7dp"
+        android:text="0"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/superNumberCruncherView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="281dp"
+        android:layout_marginLeft="281dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="56dp"
+        android:text="100s"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/superNumberCruncherView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTimeAdjustment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="40dp"
+        android:alpha="0"
+        android:text="+10s"
+        android:textColor="@color/blockOver21"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvRecord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="9dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/superNumberCruncherView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvScore"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+    <ImageView
+        android:id="@+id/ivGameOverBox"
+        android:layout_width="247dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvScore"
+        app:srcCompat="@drawable/gameoverboxempty" />
+
+    <ImageView
+        android:id="@+id/ivGoBack"
+        android:layout_width="118dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="110dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/superNumberCruncherView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mainmenubtn" />
+
+    <ImageView
+        android:id="@+id/ivPlayAgain"
+        android:layout_width="142dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="100dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGameOverBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/playagain" />
+
+
+</android.support.constraint.ConstraintLayout>
